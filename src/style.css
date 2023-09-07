@@ -1,0 +1,249 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700;800&family=Rajdhani:wght@300;400;500;600;700&display=swap');
+
+/* font-family: 'Open Sans', sans-serif;
+font-family: 'Rajdhani', sans-serif; */
+* {
+    margin: 0;
+    padding: 0;
+    outline: none;
+    box-sizing: border-box;
+}
+
+ul {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    display: inline-block;
+}
+
+.new_btn {
+    padding: 5px 20px;
+    background-color: #80b500;
+    color: #fff !important;
+    text-align: center;
+    font-size: 12px;
+    font-weight: 700;
+    text-transform: uppercase;
+    border-radius: 15px 0 15px 0;
+    -webkit-border-radius: 15px 0 15px 0;
+    -moz-border-radius: 15px 0 15px 0;
+    -ms-border-radius: 15px 0 15px 0;
+    -o-border-radius: 15px 0 15px 0;
+}
+
+h1 {
+    font-size: 72px;
+    line-height: 1.5;
+}
+
+h2 {
+    font-size: 30px;
+}
+
+h3 {
+    font-size: 24px;
+}
+
+h4 {
+    font-size: 20px;
+}
+
+h5 {
+    font-size: 18px;
+}
+
+h6 {
+    font-size: 16px;
+}
+
+
+/* ==================================================banner================================= */
+
+.banner-text {
+    padding: 200px 0;
+    width: 650px;
+    font-family: 'Rajdhani', sans-serif;
+}
+
+.banner-text h6 {
+    font-weight: 700;
+    margin-bottom: 20px;
+}
+
+.banner-text h1 {
+    line-height: 1;
+    font-weight: 700;
+    color: #071c1f;
+    margin-bottom: 60px;
+    text-transform: capitalize;
+}
+
+.banner-text a {
+    display: inline-block;
+    font-size: 16px;
+    font-weight: 700;
+    padding: 15px 40px;
+    text-align: center;
+    background-color: #80b500;
+    color: #ffffff;
+    text-transform: uppercase;
+}
+/* ==================================================banner================================= */
+.featured{
+   padding-top: 100px;
+
+}
+.featured_right{
+    margin-bottom: 40px;
+}
+.featured_right:last-child{
+    margin-bottom: 0;
+}
+/* ==================================================banner================================= */
+.top-product{
+    margin-top: 80px;
+    margin-bottom: 50px;
+}
+.top-product h1,
+.featured_product h1{
+    font-weight: 700;
+    font-family: 'Rajdhani', sans-serif;
+    color:#071c1f;
+}
+.top-product ul li{
+    display: inline-block;
+}
+.top-product ul li::after{
+    position: absolute;
+    content: '';
+    top: 0;
+    right: 0;
+    height: 10px;
+    width: 2px;
+    background: gray;
+}
+.top-product ul li a{
+    padding: 15px 40px;
+    font-size: 16px;
+    font-weight: 700;
+    color: #071c1f;
+    text-transform: uppercase;
+    position: relative;
+}
+.top-product ul li a::after{
+    position: absolute;
+    content: "";
+    top: 50%;
+    right: 0;
+    height: 15px;
+    width: 2px;
+    background: gray;
+    transform: translateY(-50%);
+    -webkit-transform: translateY(-50%);
+    -moz-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    -o-transform: translateY(-50%);
+}
+.top-product ul li:last-child a::after{
+    background: none;
+}
+.product{
+    position: relative;
+}
+.product p{
+    position: absolute;
+    top: 10px;
+    right: 10px;
+}
+.product_text h6{
+    font-family: 'Rajdhani', sans-serif;
+    font-weight: 700;
+}
+.product_text h4{
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 700;
+    color: #80b500;
+}
+.product_text h5{
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 500;
+    color: #80b500;
+}
+
+/* ==================================================banner================================= */
+.sub_banner{
+    background-color: #f7f5eb;
+    padding: 120px 0;
+    margin-top: 100px;
+    margin-bottom: 60px;
+}
+.sub_banner_text h6{
+    font-family: 'Rajdhani', sans-serif;
+    font-weight: 700;
+    color: #80b500;
+    margin-bottom: 20px;
+}
+.sub_banner_text h1{
+    font-family: 'Rajdhani', sans-serif;
+    font-weight: 700; 
+    line-height: 1.2;
+}
+.sub_banner_date{
+    margin-top: 60px;
+}
+.sub_banner_item{
+    display: flex;
+}
+.single_date{
+    margin-right: 30px;
+}
+.single_date h2{
+    text-align: center;
+    font-family: 'Rajdhani', sans-serif;
+    font-weight: 700;
+    height: 100px;
+    width: 100px;
+    line-height: 100px;
+    background: #ffffff;
+    border-radius: 100%;
+    -webkit-border-radius: 100%;
+    -moz-border-radius: 100%;
+    -ms-border-radius: 100%;
+    -o-border-radius: 100%;
+}
+.single_date p{
+    font-family: 'Rajdhani', sans-serif;
+    text-transform: uppercase;
+    font-weight: 600;
+    font-size: 17px;
+    padding-left: 35px;
+    padding-top: 10px;
+}
+.sub_banner_text a{
+    padding: 15px 40px;
+    background: #80b500;
+    border: 1px solid white;
+    font-size: 16px;
+    font-family: 'Rajdhani', sans-serif;
+    font-weight: 700;
+    color: #071c1f;
+    margin-top: 50px;
+}
+
+.featured_product{
+    margin-bottom: 20px;
+}
+.play{
+    margin-top: 100px;
+    width: 100%;
+    height: 600px;
+    z-index: 99;
+}
+.play_item{
+    margin-top: 100px;
+    width: 100%;
+    height: 600px;
+    
+}
