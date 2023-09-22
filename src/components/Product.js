@@ -1,10 +1,13 @@
 import React from 'react'
 import { Card, Col } from 'react-bootstrap'
 import ReactStars from "react-rating-stars-component";
+import { Link } from 'react-router-dom';
+
 const Product = ({ item }) => {
     const { image, name, price, rating, offer, delprice } = item
     return (
         <Col lg={3} className='mt-4'>
+            <Link to={`/product/${item.id}`}>
             <Card>
                 <div className="product">
                 <p className='new_btn'>{offer}</p>
@@ -26,6 +29,7 @@ const Product = ({ item }) => {
                     />
                 </Card.Body>
             </Card>
+            </Link>
         </Col>
     )
 }

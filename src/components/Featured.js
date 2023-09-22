@@ -2,6 +2,7 @@ import React from 'react'
 import { Card, Col, Container, Row } from 'react-bootstrap'
 import { productData } from '../fackData/productData'
 import ReactStars from "react-rating-stars-component";
+import { Link } from 'react-router-dom';
 const Featured = () => {
 
     return (
@@ -13,7 +14,8 @@ const Featured = () => {
                 {
                     productData.map(item => (
                         item.product === "featured" &&
-                        <Col lg={3} className='mt-4'>
+                        <Col key={item.id} className='mt-4'  lg={3}>
+                            <Link to={`/product/${item.id}`}>
                             <Card>
                                 <div className="product">
                                     <p className='new_btn'>{item.offer}</p>
@@ -35,6 +37,7 @@ const Featured = () => {
                                     />
                                 </Card.Body>
                             </Card>
+                            </Link>
                         </Col>
                     ))
                 }

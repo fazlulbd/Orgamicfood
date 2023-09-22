@@ -4,7 +4,7 @@ import { Carousel, Container } from 'react-bootstrap'
 import { Link } from 'react-router-dom'
 const Banner = () => {
   return (
-    <Container fluid>
+    <>
        <Carousel>
       {
           bannerData.map(item => (
@@ -22,7 +22,7 @@ const Banner = () => {
           ))
         }
        </Carousel>
-    </Container>
+    </>
   )
 }
 
